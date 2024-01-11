@@ -44,9 +44,9 @@ function About() {
       >
         <div className='relative'>
           {/* Blob Image */}
-          <img src="/blob.png" alt="" className='absolute top-0 left-0 md:w-full md:h-full w-11/12 h-11/12 z-10' />
+          <img src="./blob.png" alt="" className='absolute top-0 left-0 md:w-full md:h-full w-11/12 h-11/12 z-10' />
           {/* About Image */}
-          <img src="/about.png" alt="" className='relative z-10 md:w-full md:h-full w-11/12 h-11/12' />
+          <img src="./about.png" alt="" className='relative z-10 md:w-full md:h-full w-11/12 h-11/12' />
         </div>
         <div className='md:justify-start text-color md:mr-8 mr-6'>
         <h6 className='text-gold lg:mt-28 m-0 md:text-xl text-lg'>Who Am I?</h6>
