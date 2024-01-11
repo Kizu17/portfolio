@@ -1,0 +1,116 @@
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #ef32d9 0%, #89fffd  51%, #ef32d9  100%);
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* ScrollToTopButton.css */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* Customize as needed */
+  border: 1px solid #ccc; /* Customize as needed */
+  border-radius: 8px;
+  padding: 8px;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.scroll-to-top-button:hover {
+  background-color: #eaeaea; /* Customize hover background color as needed */
+}
+ 
+.button-image {
+  width: 24px; /* Adjust the width of the image */
+  height: 24px; /* Adjust the height of the image */
+}
+
+
+/*box color for work*/
+.text-color {
+  color: #F3F5E8;
+}
+.text-gold{
+  color: #cf8da7;
+}
+
+.line-color{
+  border-color: #1B1C22;
+}
+.bg-color{
+  background-color: #2B5974;
+}
+.bg-color1{
+  background-color: #000000
+}
+.text-xxs {
+  font-size: 10px; 
+}
+
+.bg-clip-text {
+  background-clip: text;
+}
+
+/*STYLE FOR TESTIMONIAL CARDS*/
+.card {
+  width: 270px;
+  height: 185px;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 250%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #4E5059;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}  
+
+
+/*contact card tool tip*/
