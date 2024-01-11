@@ -7,10 +7,10 @@ function Main() {
   return (
     <div id='main' className='' >
       <div className='w-full h-screen relative' >
-        <img className='w-full h-full object-cover' src="/bg.jpg" alt="" />
+        <img className='w-full h-full object-cover' src="./public.jpg" alt="" />
         <div className='absolute bottom-0 left-0 right-0' > </div>
         <div className='absolute inset-0 bg-gradient-to-r from-gray-800 to-black opacity-60'></div>
-        
+         
       </div>
 
 
