@@ -4,6 +4,9 @@ import { FaCss3Alt } from "react-icons/fa6";
 import { FaHtml5, FaReact, FaJava, FaPython } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { SiTailwindcss, SiKrita, SiCanva } from "react-icons/si";
+import Gradient_blob from '../assets/Gradient_blob.png';
+import resumeImg from '../assets/resumeImg.png';
+import AnimatedShape  from '../assets/AnimatedShape.svg';
 
 const download = (content, fileName, contentType) => {
   const a = document.createElement('a');
@@ -29,7 +32,12 @@ const Work = () => {
 
   return ( 
     <div id='project' className='max-x-[1040px] m-auto  bg-gradient-to-r from-gray-800 to-black'>
-      <div style={{ backgroundImage: 'url(/AnimatedShape.svg)', backgroundSize: 'cover'  }}> 
+      <div  style={{
+        backgroundImage: `url(${AnimatedShape})`,
+        backgroundSize: 'cover',
+        height: '100%',
+        width: '100%'
+      }}>
         <div className='grid md:grid-cols-2 grid-cols-1 gap-2 md:pl-24 p-4 py-16 relative'> 
           <div className='text-center text-white'>
             <h6 className='text-gold m-0 md:text-xl text-lg'>What I know</h6>
@@ -77,10 +85,10 @@ const Work = () => {
   
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
             <div className='relative z-10 lg:mt-8'>
-              <img src="resumeImg.png" className='md:w-80 md:h-8/12 w-72' alt="" />
+              <img src={resumeImg} className='md:w-80 md:h-8/12 w-72' alt="" />
             </div>
             <div className='absolute z-0'>
-              <img src="Gradient_blob.png" className='md:w-124 md:h-96 w-100 h-80' alt="" />
+              <img src={Gradient_blob} className='md:w-124 md:h-96 w-100 h-80' alt="" />
             </div>
           </div>
         </div>

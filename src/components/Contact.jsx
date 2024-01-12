@@ -4,9 +4,9 @@ import { FaInstagram, FaGithub, FaFacebookF, FaPhoneAlt} from 'react-icons/fa'
 import { MdEmail } from "react-icons/md";
 const Contact = () => {
   return (
-    <div id='contact' className='max-x-[1040px] m-auto p-4 md:pl-20 py-16 relative' style={{ backgroundColor: '#292930' }}>
+    <div id='contact' className='max-x-[1040px]  m-auto p-4 md:pl-20 py-16 relative bg-gradient-to-r from-gray-800 to-black '>
         <div className='text-color relative text-center lg:mr-64 lg:ml-64 ml-4 mr-4'>
-            <h6 className='text-gold md:mt-28 m-0'>Get in Touch</h6>
+            <h6 className='text-gold md:mt-10 m-0'>Get in Touch</h6>
             <h1 className='md:text-4xl text-3xl font-bold '>Ways to Contact Me</h1>
             <h5 className='md:text-lg text-md  mt-3'> I am eager to discuss the exciting opportunities that lie ahead and how our collaboration can be a mutually enriching experience. Please feel free to connect with me, and let's embark on this journey of innovation and growth together</h5>
         </div>
@@ -58,7 +58,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className='flex flex-wrap justify-center gap-4'>
+        <div className='flex flex-wrap justify-center gap-4 pb-24'>
           <div className="justify-center mt-10">
               <button
                 className="group flex justify-center p-2 h-16 w-52 rounded-md drop-shadow-xl bg-gradient-to-r from-gray-800 to-black text-color font-semibold hover:translate-y-3 transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"

@@ -55,7 +55,7 @@
 }
 
 .line-color{
-  border-color: #1B1C22;
+  border-color: #F3F5E8;
 }
 .bg-color{
   background-color: #2B5974;
@@ -113,4 +113,7 @@
 }  
 
 
-/*contact card tool tip*/
+/* images */
+.bg{
+  background-image: url(./bg.jpg);
+}

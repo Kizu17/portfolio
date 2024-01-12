@@ -3,6 +3,10 @@ import './style.css';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import History from './History';
+import blob from '../assets/blob.png'
+import about from '../assets/about.png'
+import AnimatedShape  from '../assets/AnimatedShape.svg';
+
 const download = (content, fileName, contentType) => {
   const a = document.createElement('a');
   const file = new Blob([content], { type: contentType });
@@ -33,7 +37,10 @@ function About() {
 
   return (       
     <div id='about' className='max-x-[1040px] bg-gradient-to-r from-gray-800 to-black'>
-      <div style={{ backgroundImage: 'url(/AnimatedShape.svg)', backgroundSize: 'cover'  }}>
+      <div  style={{
+        backgroundImage: `url(${AnimatedShape})`,
+        backgroundSize: 'cover',
+      }}>
       <div className='p-4 py-16 m-auto md:pl-20 relative'>
       <motion.div 
         ref={ref}
@@ -44,9 +51,9 @@ function About() {
       >
         <div className='relative'>
           {/* Blob Image */}
-          <img src="./blob.png" alt="" className='absolute top-0 left-0 md:w-full md:h-full w-11/12 h-11/12 z-10' />
+          <img src={blob} alt="" className='absolute top-0 left-0 md:w-full md:h-full w-11/12 h-11/12 z-10' />
           {/* About Image */}
-          <img src="./about.png" alt="" className='relative z-10 md:w-full md:h-full w-11/12 h-11/12' />
+          <img src={about} alt="" className='relative z-10 md:w-full md:h-full w-11/12 h-11/12' />
         </div>
         <div className='md:justify-start text-color md:mr-8 mr-6'>
         <h6 className='text-gold lg:mt-28 m-0 md:text-xl text-lg'>Who Am I?</h6>
