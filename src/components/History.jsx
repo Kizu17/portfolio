@@ -6,7 +6,7 @@ const History = () => {
   return (
     <div className='md:ml-12'>
         <div>
-            <h2 className='text-color text-center md:text-4xl text-3xl font-bold'>My Journey As Programmer / Web Developer</h2>
+            <h2 className='text-color text-center my-4 md:text-4xl text-3xl font-bold'>My Journey As Programmer / Web Developer</h2>
         </div>
     <VerticalTimeline className='md:mt-12 mt-8'>
         

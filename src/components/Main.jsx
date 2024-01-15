@@ -3,8 +3,8 @@ import { TypeAnimation } from 'react-type-animation';
 import { FaInstagram, FaGithub, FaFacebookF} from 'react-icons/fa'
 import { FaXTwitter } from "react-icons/fa6";
 import { motion } from 'framer-motion';
-import mainPic from '../assets/mainPic.png'
-import bg from '../assets/bg.JPG'
+import mainPic from '../assets/mainPic.png';
+import bg from '../assets/bg.jpg'
 
 function Main() {
   return (

@@ -6,7 +6,7 @@ import about from '../assets/about.gif'
 import work from '../assets/work.gif'
 import resume from '../assets/resume.gif'
 import contact from '../assets/contact.gif'
-
+import Knowledge from '../assets/Knowledge.gif'
 const Sidenav = () => {
     const [nav, setNav] = useState(false);
     const handleNav = () => {
@@ -30,13 +30,13 @@ const Sidenav = () => {
                     </a>
 
                     <a href="project" className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
-                        <img src={work} alt="Home GIF" className="w-7 h-7"/>
-                        <span className='pl-4'>Project</span>
+                        <img src={Knowledge} alt="Home GIF" className="w-7 h-7"/>
+                        <span className='pl-4'>Knowledge</span>
                     </a>
 
                     <a href="resume" className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
-                        <img src={resume} alt="Home GIF" className="w-7 h-7"/>
-                        <span className='pl-4'>Resume</span>
+                        <img src={work} alt="Home GIF" className="w-7 h-7"/>
+                        <span className='pl-4'>Project</span>
                     </a>
 
                     <a href="contact" className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
@@ -57,10 +57,10 @@ const Sidenav = () => {
                 <img src={about} alt="About GIF" className="w-7 h-7"/>
                 </Link>
                 <Link to="project" smooth={true} duration={500} className='rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <img src={work} alt="Project GIF" className="w-7 h-7"/>
+                <img src={Knowledge} alt="Project GIF" className="w-7 h-7"/>
                 </Link>
                 <Link to="resume" smooth={true} duration={500} className='rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <img src={resume} alt="Resume GIF" className="w-7 h-7"/>
+                <img src={work} alt="Resume GIF" className="w-7 h-7"/>
                 </Link>
                 <Link to="contact" smooth={true} duration={500} className='rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <img src={contact} alt="Contact GIF" className="w-7 h-7"/>

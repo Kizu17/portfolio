@@ -6,7 +6,7 @@ const TestimonialItem = ({message, name, school, image}) => {
     <div className=" relative md:w-80 sm:w-64 w-52 h-86  rounded-xl bg-color bg-clip-border text-color shadow-md mt-10">
                 <div className="relative mx-4 -mt-6 h-52 overflow-hidden rounded-xl  text-color shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
                     <div className='relative mt-2 m-1 h-48 bg-color1 rounded-xl'>
-                        <p className='p-4 pb-4 md:text-lg text-md'>{message}</p>
+                        <p className='p-4 pb-4 md:text-lg text-sm'>{message}</p>
                     </div>
                 </div>
                 <div className="p-6">

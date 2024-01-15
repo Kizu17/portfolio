@@ -31,7 +31,7 @@ const Work = () => {
   };
 
   return ( 
-    <div id='project' className='max-x-[1040px] m-auto  bg-gradient-to-r from-gray-800 to-black'>
+    <div id='project' className='max-x-[1040px] h-screen m-auto  bg-gradient-to-r from-gray-800 to-black'>
       <div  style={{
         backgroundImage: `url(${AnimatedShape})`,
         backgroundSize: 'cover',
@@ -39,10 +39,10 @@ const Work = () => {
         width: '100%'
       }}>
         <div className='grid md:grid-cols-2 grid-cols-1 gap-2 md:pl-24 p-4 py-16 relative'> 
-          <div className='text-center text-white'>
-            <h6 className='text-gold m-0 md:text-xl text-lg'>What I know</h6>
+          <div className='text-center text-white '>
+            <h6 className='text-gold m-0 md:text-xl text-lg md:mt-20'>What I know</h6>
             <p className='mb-4 md:text-4xl text-3xl font-bold'>Discover My Abilities At Work</p>
-            <div className='grid md:grid-cols-2 md:gap-3 grid-cols-4 gap-2 md:pl-12 md:pt-4 relative justify-items-center'>
+            <div className='grid md:grid-cols-2 md:gap-3 grid-cols-4 gap-2 md:pl-12 md:pt-6 relative justify-items-center'>
             
             
               <div className='bg-color md:h-44 md:w-64 h-28 w-32 shadow-xl rounded-lg '>
@@ -83,7 +83,7 @@ const Work = () => {
             </div>
           </div>
   
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+          <div className='md:mt-11' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
             <div className='relative z-10 lg:mt-8'>
               <img src={resumeImg} className='md:w-80 md:h-8/12 w-72' alt="" />
             </div>
