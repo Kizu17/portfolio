@@ -50,7 +50,7 @@ const Work = () => {
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 20 }}
         transition={{ duration: 2 }}>
           
-        <div className='grid md:grid-cols-2 grid-cols-1 gap-2 md:pl-24 p-4 py-16 relative'> 
+        <div className='grid lg:grid-cols-2 grid-cols-1 gap-2 lg:pl-24 p-4 py-16 relative'> 
           <div className='text-center text-white '>
             <h6 className='text-gold m-0 md:text-xl text-lg md:mt-20'>What I know</h6>
             <p className='mb-4 md:text-4xl text-3xl font-bold'>Discover My Abilities At Work</p>
@@ -95,7 +95,7 @@ const Work = () => {
             </div>
           </div>
   
-          <div className='md:mt-11' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
+          <div className='' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
             <div className='relative z-10 lg:mt-8'>
               <img src={resumeImg} className='md:w-80 md:h-8/12 w-72' alt="" />
             </div>

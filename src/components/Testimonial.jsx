@@ -3,45 +3,51 @@ import './style.css';
 import TestimonialItem from './TestimonialItem';
 import PersonIcon from '../assets/PersonIcon.png'
 import meri from '../assets/meri.jpg'
+import Ash from '../assets/Ash.jpg'
 const data = [
     {
         message: '"He goes above and beyond, not only helping me with coding challenges but also offering support in various aspects of my projects."',
         name: 'Merry Anne Andus',
-        school: 'Classmate From Rizal Technological University',
-        image: meri
+        school: 'Student From Rizal Technological University',
+        image: meri,
+        message2: "Classmate"
 
     },
+    { 
+        message: '"Ive known him for some time now and one thing that has never changed since is his persistence. When he sets a goal, he is determined to reach that no matter what may come along the way"',
+        name: 'Maria Julianne Lacuesta',
+        school: <span style={{ marginRight: '25px' }}>Student From Asia Pacific College</span>,
+        image: PersonIcon,
+        message2: "Previous Classmate"
+    },
     {
-        message: 'Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad, Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad',
-        name: 'Person1',
-        school: 'Student From Rizal Technological University',
-        image: PersonIcon
+        message: '"I must say, his dedication and perseverance alone is an impressive trait as a team member; makes the whole team motivated, you know?"',
+        name: 'Jhulienne Ashley Tan',
+        school: 'Student From Our Lady of Fatima University',
+        image: Ash,
+        message2: "Previous Classmate"
     },
     {
         message: 'Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad, Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad',
         name: 'Person1',
         school: 'Student From Rizal Technological University',
-        image: PersonIcon
-
-    },
-    {
-        message: 'Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad, Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad',
-        name: 'Person1',
-        school: 'Student From Rizal Technological University',
-        image: PersonIcon
+        image: PersonIcon,
+        message2: "Classmate"
     }, 
     {
         message: 'Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad, Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad',
         name: 'Person1',
         school: 'Student From Rizal Technological University',
-        image: PersonIcon
+        image: PersonIcon,
+        message2: "Classmate"
 
     },
     {
         message: 'Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad, Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad',
         name: 'Person1',
         school: 'Student From Rizal Technological University',
-        image: PersonIcon
+        image: PersonIcon,
+        message2: "Classmate"
     },
 ]
 
@@ -59,7 +65,8 @@ const Testimonial = () => {
                 message={item.message} 
                 name={item.name} 
                 school={item.school} 
-                image={item.image}/>
+                image={item.image}
+                message2={item.message2}/>
             ))}
             
 

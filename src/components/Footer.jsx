@@ -11,7 +11,9 @@ function Footer() {
       <div className="border-b border-solid line-color w-full"></div>
       <div className='grid md:grid-cols-3 grid-cols-1 p-3'>
         <div className=''>
-          <img src={logo} className="md:w-36 md:h-14 w-30 h-10 mx-auto block md:ml-0" alt="Logo" />
+        <Link to="main" smooth={true} duration={500}>
+          <img src={logo} className="cursor-pointer md:w-36 md:h-14 w-30 h-10 mx-auto block md:ml-0" alt="Logo" />
+        </Link>
           <p className='text-white md:text-xs text-xxs  text md:ml-5 text-center md:text-start'>@2024 Roger Cruz. All Rights Reserve</p>
         </div>
         <div className='text-center md:pt-4 pt-2 text-white'>
