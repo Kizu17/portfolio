@@ -6,6 +6,7 @@ import History from './History';
 import blob from '../assets/blob.png'
 import about from '../assets/about.png'
 import AnimatedShape  from '../assets/AnimatedShape.svg';
+import RogerCruz_Resume from '../assets/RogerCruz_Resume.pdf';
 
 const download = (content, fileName, contentType) => {
   const a = document.createElement('a');
@@ -19,21 +20,11 @@ const download = (content, fileName, contentType) => {
 };
 
 function About() {
-    // Function to handle the download when the button is clicked
-    const handleDownloadResume = () => {
-      // Replace 'RogerCruz_Resume.pdf' and 'INSERT_BASE64_ENCODED_PDF_DATA_HERE' with actual values
-      const fileName = 'RogerCruz_Resume.pdf';
-      const pdfData = 'INSERT_BASE64_ENCODED_PDF_DATA_HERE'; // Replace with your actual base64-encoded PDF data
-  
-      // Trigger the file download
-      download(pdfData, fileName, 'application/pdf');
-    };
-
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
 
-
+ 
 
   return (       
     <div id='about' className='max-x-[1040px] bg-gradient-to-r from-gray-800 to-black'>
@@ -85,9 +76,11 @@ function About() {
                 Email:</p><p className='text-color lg:ml-2 md:ml-0 sm:ml-2 ml-0'>rogerraycruz17@gmail.com</p>
             </div>
           </div>
-          <button className="btn-grad mt-8" onClick={handleDownloadResume}>
-              Download CV
-          </button>
+          <a href={RogerCruz_Resume} download="RogerCruz_Resume">
+            <button className="btn-grad mt-8">
+                Resume
+            </button>
+          </a>
         </div>
       </motion.div>
       </div>

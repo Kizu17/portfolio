@@ -7,6 +7,7 @@ import work from '../assets/work.gif'
 import resume from '../assets/resume.gif'
 import contact from '../assets/contact.gif'
 import Knowledge from '../assets/Knowledge.gif'
+import './style.css'; 
 const Sidenav = () => {
     const [nav, setNav] = useState(false);
     const handleNav = () => {
@@ -19,27 +20,27 @@ const Sidenav = () => {
         {
             nav?(
                 <div className='fixed w-full h-screen bg-white/60 flex flex-col justify-center items-center z-20'>
-                    <a href="main" className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
+                    <a onClick={handleNav} href="#main" className="w-[75%]  flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
                         <img src={home} alt="Home GIF" className="w-7 h-7"/>
                         <span className='pl-4'>Home</span>
                     </a>
 
-                    <a href="about" className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
+                    <a onClick={handleNav} href="#about" className="w-[75%]  flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
                         <img src={about} alt="Home GIF" className="w-7 h-7"/>
                         <span className='pl-4'>About</span>
                     </a>
 
-                    <a href="project" className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
+                    <a onClick={handleNav} href="#project" className="w-[75%]  flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
                         <img src={Knowledge} alt="Home GIF" className="w-7 h-7"/>
                         <span className='pl-4'>Knowledge</span>
                     </a>
 
-                    <a href="resume" className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
+                    <a onClick={handleNav} href="#resume" className="w-[75%]  flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
                         <img src={work} alt="Home GIF" className="w-7 h-7"/>
                         <span className='pl-4'>Project</span>
                     </a>
 
-                    <a href="contact" className="w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
+                    <a onClick={handleNav} href="#contact" className="w-[75%]  flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200">
                         <img src={contact} alt="Home GIF" className="w-7 h-7"/>
                         <span className='pl-4'>Contact</span>
                     </a>

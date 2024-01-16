@@ -2,13 +2,13 @@ import React from 'react'
 import './style.css';
 import TestimonialItem from './TestimonialItem';
 import PersonIcon from '../assets/PersonIcon.png'
-
+import meri from '../assets/meri.jpg'
 const data = [
     {
         message: '"He goes above and beyond, not only helping me with coding challenges but also offering support in various aspects of my projects."',
         name: 'Merry Anne Andus',
         school: 'Classmate From Rizal Technological University',
-        image: PersonIcon
+        image: meri
 
     },
     {
@@ -29,7 +29,7 @@ const data = [
         name: 'Person1',
         school: 'Student From Rizal Technological University',
         image: PersonIcon
-    },
+    }, 
     {
         message: 'Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad, Lorem ipsum dolor sit amet, hehe jcapc ldolr dir jadad',
         name: 'Person1',
@@ -52,7 +52,7 @@ const Testimonial = () => {
         <h6 className='text-gold md:mt-28 m-0 text-center'>Shared Acclaim</h6>
         <h2 className='text-color text-center md:text-4xl text-3xl font-bold'>Testimonials</h2>
         <h5 className='md:text-lg text-md text-color text-center mb-10 mt-4 lg:mr-64 lg:ml-64'>These testimonials from my collaborators stand as a testament to the meaningful connections and collaborative spirit that define our shared experiences.</h5>
-         <div className='grid lg:grid-cols-3 grid-cols-2 lg:gap-6 gap-4 justify-items-center'>
+         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-4 justify-items-center'>
             {data.map((item, idx)=> (
                 <TestimonialItem 
                 key={idx} 
